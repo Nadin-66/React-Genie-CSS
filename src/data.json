@@ -1,0 +1,93 @@
+
+{
+	"items": [
+		{
+			"id": 1,
+			"nElements": 2,
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "two",
+			"type": "grid",
+			"image": "./img/1.jpg"
+		},
+		{
+			"id": 2,
+			"nElements": 2,
+			"code": ".block2{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "two",
+			"type": "flex",
+			"image": "./img/2.jpg"
+		},
+		{
+			"id": 3,
+			"nElements": 2,
+			"code": ".block3{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "two",
+			"type": "flex",
+			"image": "./img/3.jpg"
+		},
+		{
+			"id": 4,
+			"nElements": 3,
+			"code": ".block4{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "three",
+			"type": "grid",
+			"image": "./img/4.jpg"
+		},
+		{
+			"id": 5,
+			"nElements": 3,
+			"code": ".block5{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "three",
+			"type": "flex",
+			"image": "./img/5.jpg"
+		},
+		{
+			"id": 6,
+			"nElements": 3,
+			"code": ".block6{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "three",
+			"type": "flex",
+			"image": "./img/6.jpg"
+		},
+		{
+			"id": 7,
+			"nElements": 4,
+			"code": ".block7{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "four",
+			"type": "grid",
+			"image": "./img/7.jpg"
+		},
+		{
+			"id": 8,
+			"nElements": 4,
+			"code": ".block8{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "four",
+			"type": "flex",
+			"image": "./img/8.jpg"
+		},
+		{
+			"id": 9,
+			"nElements": 4,
+			"code": ".block9{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "four",
+			"type": "flex",
+			"image": "./img/9.jpg"
+		},
+		{
+			"id": 10,
+			"nElements": 4,
+			"code": ".block10{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "four",
+			"type": "flex",
+			"image": "./img/10.jpg"
+		},
+		{
+			"id": 11,
+			"nElements": 4,
+			"code": ".block11{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"name": "four",
+			"type": "flex",
+			"image": "./img/11.jpg"
+		}
+	]
+}
