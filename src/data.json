@@ -4,7 +4,7 @@
 		{
 			"id": 1,
 			"nElements": 2,
-			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}\n.block__item{\n\tbackground-color: yellowgreen;\n\twidth: 200px;\n\theight: 200px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;\n}",
 			"name": "two",
 			"type": "grid",
 			"image": "./img/1.jpg"
@@ -12,7 +12,7 @@
 		{
 			"id": 2,
 			"nElements": 2,
-			"code": ".block2{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: space-between;\n\talign-items: flex-start;\n}\n.block__item{\n\tbackground-color: yellowgreen;\n\twidth: 200px;\n\theight: 200px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;\n}",
 			"name": "two",
 			"type": "flex",
 			"image": "./img/2.jpg"
@@ -20,7 +20,7 @@
 		{
 			"id": 3,
 			"nElements": 2,
-			"code": ".block3{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-center;\n}\n.block__item{\n\tbackground-color: yellowgreen;\n\twidth: 200px;\n\theight: 200px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;\n}",
 			"name": "two",
 			"type": "flex",
 			"image": "./img/3.jpg"
@@ -28,7 +28,7 @@
 		{
 			"id": 4,
 			"nElements": 3,
-			"code": ".block4{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-direction: column;\n}\n.block__item{\n\tbackground-color: #32cda4;;\n\twidth: 200px;\n\theight: 200px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;\n}",
 			"name": "three",
 			"type": "grid",
 			"image": "./img/4.jpg"
@@ -36,7 +36,7 @@
 		{
 			"id": 5,
 			"nElements": 3,
-			"code": ".block5{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: space-around;\n\talign-items: flex-end;\n}\n.block__item{\n\tbackground-color: #32cda4;;\n\twidth: 200px;\n\theight: 200px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;\n}",
 			"name": "three",
 			"type": "flex",
 			"image": "./img/5.jpg"
@@ -44,7 +44,7 @@
 		{
 			"id": 6,
 			"nElements": 3,
-			"code": ".block6{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-between;\n}\n.block__item{\n\tbackground-color: #32cda4;\n\twidth: 200px;\n\theight: 200px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;\n}",
 			"name": "three",
 			"type": "flex",
 			"image": "./img/6.jpg"
@@ -52,7 +52,7 @@
 		{
 			"id": 7,
 			"nElements": 4,
-			"code": ".block7{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex-wrap: wrap;\n\tjustify-content: start;\n}\n.block__item{\n\tbackground-color: yellowgreen;\n\twidth: 250px;\n\theight: 250px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;\n}",
 			"name": "four",
 			"type": "grid",
 			"image": "./img/7.jpg"
@@ -60,7 +60,7 @@
 		{
 			"id": 8,
 			"nElements": 4,
-			"code": ".block8{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex-wrap: wrap;\n\tjustify-content: space-between;\n}\n.block__item{\n\tbackground-color: yellowgreen;\n\twidth: 30%;\n\theight: 30%;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;}\n.block .d {\n\tflex-grow: 3;\n}",
 			"name": "four",
 			"type": "flex",
 			"image": "./img/8.jpg"
@@ -68,7 +68,7 @@
 		{
 			"id": 9,
 			"nElements": 4,
-			"code": ".block9{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\tjustify-content: space-around;\n\tgap:30px\n}\n.block__item{\n\tbackground-color: yellowgreen;\n\twidth: 30%;\n\theight: 30%;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;}\n.block .d {\n\tflex-grow: 3;\n}",
 			"name": "four",
 			"type": "flex",
 			"image": "./img/9.jpg"
@@ -76,7 +76,7 @@
 		{
 			"id": 10,
 			"nElements": 4,
-			"code": ".block10{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tjustify-content: space-around;\n\tgap:200px\n}\n.block__item{\n\tbackground-color: yellowgreen;\n\twidth: 290px;\n\theight: 240px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;}\n.block .d {\n\tflex-grow: 3;\n}",
 			"name": "four",
 			"type": "flex",
 			"image": "./img/10.jpg"
@@ -84,7 +84,7 @@
 		{
 			"id": 11,
 			"nElements": 4,
-			"code": ".block11{\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}",
+			"code": ".block{\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\tjustify-content: space-around;\n\talign-items: stretch;\n}\n.block__item{\n\tbackground-color: yellowgreen;\n\twidth: 200px;\n\ttext-align: center;\n\tfont-size: 50px;\n\tcolor: #323030;\n}",
 			"name": "four",
 			"type": "flex",
 			"image": "./img/11.jpg"

@@ -4,26 +4,106 @@
   height: 100%;
 }
 
+.header{
+	padding-top: 80px;
+	display: flex;
+align-items: center;
+justify-content: center;
+height: 50px;
+margin-left: 25%;
+}
+
+h1{
+	position: relative;
+	font-weight: bold;
+	border: #fff;
+	}
+	 h1 {
+	position: absolute;
+	font-size: 3em;
+	transform: translate(-50%, -50%);
+	}
+	h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 1px #2b434f;
+	}
+	h1:nth-child(2) {
+		color: #b1e2ec;
+		animation: animate 4s ease-in-out infinite;
+	}
+	@keyframes animate {
+		0%, 100%{
+			clip-path: polygon(0% 57%, 3% 60%, 7% 63%, 11% 65%, 16% 68%, 20% 69%, 26% 69%, 29% 69%, 34% 69%, 38% 67%, 40% 65%, 43% 64%, 46% 62%, 49% 60%, 52% 57%, 55% 53%, 59% 50%, 62% 48%, 65% 46%, 69% 45%, 73% 45%, 77% 44%, 80% 45%, 84% 47%, 88% 48%, 92% 50%, 96% 53%, 99% 98%, 2% 99%);
+		}
+		50%{
+			clip-path: polygon(0% 66%, 3% 63%, 5% 60%, 8% 57%, 10% 53%, 13% 51%, 17% 47%, 22% 45%, 26% 44%, 31% 46%, 34% 46%, 38% 50%, 42% 52%, 46% 54%, 50% 56%, 53% 58%, 56% 61%, 59% 63%, 63% 62%, 66% 60%, 69% 58%, 72% 55%, 77% 53%, 81% 50%, 84% 48%, 87% 45%, 91% 45%, 94% 45%, 99% 46%, 99% 97%, 0% 97%);
+		}
+	}
+
+.imghead{
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	background-image: url("../public/img/geniehead1.png");
+	background-repeat:  no-repeat, no-repeat;
+margin: auto;
+}
+.btncolor{
+	color: rgb(103, 165, 223);
+}
+
 .pics {
-	margin-top: 50px;
+	margin-top: 5px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
-.title {
-	margin-top: 30px;
+.picnum{
+	color:#fff;
+	padding-left: 5px;
 }
+.light{
+	filter: saturate(150%) brightness(150%) contrast(1000%);
+}
+.chatpos {
+	/* margin-top: 20px; */
+	position: absolute;
+	height: 100px;
+	width: 600px;
+	bottom: 250px;
+	left:300px
+}
+
 .buttons {
-	margin-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-center;
+	margin-top: 5px;
 }
 .getcode{
+	height: 350px;
 	padding-left: 30px;
-	margin: 50px 50px 50px 50px;
+	margin: 10px 50px 20px 50px;
+	overflow: auto;
 }
 .left {
 	text-align: left;
+	margin-left: 25%;
 }
+
+.imggin{
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	left: 55px;
+	bottom: 35px;
+	z-index: 1;
+	background-size: contain;
+	background-image: url("../public/img/dzhin2.png");
+	background-repeat: no-repeat, no-repeat;
+}
+
 .wrapCode {
-	padding: 20px;
+	padding: 25px;
 	background: #fff;
 }
