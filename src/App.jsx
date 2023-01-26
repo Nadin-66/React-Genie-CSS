@@ -50,8 +50,7 @@ function App() {
 		<AppContext.Provider value={{ position }}>
 			<div className="App">
 				<div className='header'>
-					<h1 >Code from Genie</h1>
-					<h1 >Code from Genie</h1>
+					<h1 >CSS from Genie</h1>
 				</div>
 				{/* <div className='imghead'></div> */}
 				<div className='buttons'>
