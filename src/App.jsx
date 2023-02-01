@@ -1,28 +1,30 @@
 import './App.css';
 import Header from './components/Header';
-import items from './data.json'
+// import items from './data.json'
 import { useState, createContext } from 'react';
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
-
+import axios from 'axios';
+import { useEffect } from 'react';
 export const AppContext = createContext();
 
 
 function App() {
 
-	const [data, setData] = useState(items)
+	// const [data, setData] = useState(items)
 	const [position, setPosition] = useState(0)
 	const [code, setCode] = useState({})
 	const [numElements, setNumElements] = useState(0)
+	const [elements, setElements] = useState()
 
 	function getNumElements() {
 
 	}
 
 	function incHandler() {
-		if (position + 3 == data.items.length) {
+		if (position + 3 == elements?.length) {
 			setPosition(0)
 			return
-		} else if (position + 1 == data.items.length || position + 2 == data.items.length) {
+		} else if (position + 1 == elements?.length || position + 2 == elements?.length) {
 			// setPosition(0)
 			return
 		}
@@ -39,11 +41,16 @@ function App() {
 		setCode({})
 	}
 	function getCodeHandler(id) {
-		const codeVal = data.items.filter(el => {
+		const codeVal = elements?.filter(el => {
 			return el.id === id;
 		})
 		setCode(...codeVal)
 	}
+
+	useEffect(() => {
+		axios("https://genie-code-api.onrender.com/items").then(i =>  setElements(i.data))
+
+	}, [])
 
 	// console.log(data);
 	return (
@@ -59,7 +66,7 @@ function App() {
 				</div>
 
 
-				<div className='pics'>
+				{/* <div className='pics'>
 
 					<div onClick={() => getCodeHandler(data.items[position].id)} className=" light card w-96 bg-base-100 shadow-xl image-full">
 						<figure><img src={data.items[position].image} alt="Layout" /></figure>
@@ -83,6 +90,35 @@ function App() {
 						<figure><img src={data.items[position + 2].image} alt="Layout" /></figure>
 						<div className='picnum'>
 							{data.items[position] && <h2 className="card-title"> {data.items[position + 2].id} </h2>}
+
+						</div>
+					</div>}
+				</div> */}
+
+				<div className='pics'>
+
+					<div onClick={() => getCodeHandler(elements && elements[position].id)} className=" light card w-96 bg-base-100 shadow-xl image-full">
+						<figure><img src={elements && elements[position].image} alt="Layout" /></figure>
+						<div className='picnum'>
+							<h2 className="card-title"> {elements && elements[position].id} </h2>
+
+						</div>
+					</div>
+
+					{elements && elements[position + 1] && <div onClick={() => getCodeHandler(elements && elements[position + 1].id)} className="light card w-96 bg-base-100 shadow-xl image-full">
+						<figure><img src={elements && elements[position + 1].image} alt="Layout" /></figure>
+						<div className='picnum'>
+							{elements && elements[position] && <h2 className="card-title"> {elements && elements[position + 1].id} </h2>}
+
+						</div>
+					</div>}
+
+
+
+					{elements && elements[position + 2] && <div onClick={() => getCodeHandler(elements && elements[position + 2].id)} className="light code card w-96 bg-base-100 shadow-xl image-full">
+						<figure><img src={elements && elements[position + 2].image} alt="Layout" /></figure>
+						<div className='picnum'>
+							{elements && elements[position] && <h2 className="card-title"> {elements && elements[position + 2].id} </h2>}
 
 						</div>
 					</div>}

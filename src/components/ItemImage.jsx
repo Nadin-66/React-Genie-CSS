@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { AppContext } from '../App';
 
 function ItemImage() {
-	const {data} = useContext(AppContext)
+	const {} = useContext(AppContext)
   return (
 	 <div>ItemImage</div>
   )
